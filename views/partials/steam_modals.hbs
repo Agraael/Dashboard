@@ -1,0 +1,77 @@
+<div class="modal fade" id="steamUserModal" tabindex="-1" role="dialog" aria-labelledby="steamUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Put steam Id </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a target="_blank" rel="noopener noreferrer" href="https://steamidfinder.com/">Link</a>
+                <form>
+                    <div class="form-group">
+                        <label for="steamUser-id" class="col-sm-2 col-form-label">ID</label>
+                        <input type="text" class="form-control" id="steamUser-id"  placeholder="Enter your steamID64">
+                    </div>
+                    <div class="form-group">
+                        <label for="steamUser-timer" class="col-sm-2 col-form-label">Timer</label>
+                        <input type="number" min="1" class="form-control" id="steamUser-timer" placeholder="Enter frequency time (seconds)">
+                    </div>
+                    <button type="submit" id="add-steamUser-widget" class="btn text-white btn-info btn-block">Add</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div id="steamUser-err" class="alert alert-danger mx-auto err-alert" role="alert"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="steamGameModal" tabindex="-1" role="dialog" aria-labelledby="steamGameModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Chosse a stean game</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a target="_blank" rel="noopener noreferrer" href="https://steamdb.info/apps/">Link</a>
+                <form>
+                    <div class="form-group">
+                        <label for="steamGame-id" class="col-sm-2 col-form-label">Game's Id</label>
+                        <input type="number" class="form-control" id="steamGame-id"  placeholder="Enter the game Id">
+                    </div>
+                    <div class="form-group">
+                        <label for="steamGame-timer" class="col-sm-2 col-form-label">Timer</label>
+                        <input type="number" min="1" class="form-control" id="steamGame-timer" placeholder="Enter frequency time (seconds)">
+                    </div>
+                    <button type="submit" id="add-steamGame-widget" class="btn text-white btn-info btn-block">Add</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div id="steamGame-err" class="alert alert-danger mx-auto err-alert" role="alert"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="steamServiceModal" tabindex="-1" role="dialog" aria-labelledby="steamServiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Choose your steam widget ?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <a class="btn text-white btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#steamGameModal">Game current player</a>
+                <a class="btn text-white btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#steamUserModal">Profile info</a>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

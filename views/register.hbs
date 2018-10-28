@@ -1,0 +1,46 @@
+<div class="container container-spaced shadow bg-white rounded">
+    <div class="card text-center">
+        <div class="card-body">
+            <h3 class="card-title">Create a new account</h3>
+            <form method="post">
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter you first name" name="firstName" required value="{{body.firstName}}">
+                    {{#if errors.firstName}}
+                        <div class="alert alert-danger" role="alert">{{errors.firstName}}</div>
+                    {{/if}}
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter you last name" name="lastName" required value="{{body.lastName}}">
+                    {{#if errors.lastName}}
+                        <div class="alert alert-danger" role="alert">{{errors.lastName}}</div>
+                    {{/if}}
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" required value="{{body.email}}" >
+                    <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    {{#if errors.email}}
+                        <div class="alert alert-danger" role="alert">{{errors.email}}</div>
+                    {{/if}}
+                    {{#if errors.login}}
+                        <div class="alert alert-danger" role="alert">{{errors.login}}</div>
+                    {{/if}}
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password" required value="{{body.password}}">
+                    {{#if errors.password}}
+                        <div class="alert alert-danger" role="alert">{{errors.password}}</div>
+                    {{/if}}
+                </div>
+                <div class="alert alert-primary" role="alert">After creating your account, you will be asked to sign in and provide a security question.</div>
+                <button type="submit" class="btn btn-success">Submit</button>
+                <a class="btn btn-secondary" href="/">Return back</a>
+            </form>
+        </div>
+        <div class="card-footer text-muted">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="modal fade" id="githubLogModal" tabindex="-1" role="dialog" aria-labelledby="githubLogModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Connect to your github account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="githubLog-name" class="col-sm-2 col-form-label">Username</label>
+                        <input type="text" class="form-control" id="githubLog-name"  placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="githubLog-pass" class="col-sm-2 col-form-label">Password</label>
+                        <input type="password" min="1" class="form-control" id="githubLog-pass" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" id="add-githubLog" class="btn text-white btn-info btn-block">Add</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div id="githubLog-err" class="alert alert-danger mx-auto err-alert" role="alert"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="repoModal" tabindex="-1" role="dialog" aria-labelledby="repoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Choose your repository</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="repo-name" class="col-sm-2 col-form-label">Repo</label>
+                        <input type="text" class="form-control" id="repo-name"  placeholder="Enter your repository name">
+                    </div>
+                    <div class="form-group">
+                        <label for="repo-timer" class="col-sm-2 col-form-label">Timer</label>
+                        <input type="number" min="1" class="form-control" id="repo-timer" placeholder="Enter frequency time (seconds)">
+                    </div>
+                    <button type="submit" id="add-repo-widget" class="btn text-white btn-info btn-block">Add</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div id="repo-err" class="alert alert-danger mx-auto err-alert" role="alert"></div>
+            </div>
+        </div>
+    </div>
+</div>

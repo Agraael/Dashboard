@@ -1,0 +1,30 @@
+.fullbox {
+  height: 80vh;
+}
+body {
+    background-color: #e9ecef;
+}
+
+.container-spaced {
+    margin-top: 8vh;
+}
+.err-alert {
+    display: none;
+}
+
+.widget {
+    display: none;
+}
+.card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    column-gap: 0;
+}
+
+.list-group{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}

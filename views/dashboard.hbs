@@ -1,0 +1,29 @@
+{{>meteo_modals}}
+{{>youtube_modals}}
+{{>steam_modals}}
+{{>github_modals}}
+<div class="modal fade" id="widgetModal" tabindex="-1" role="dialog" aria-labelledby="widgetModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Choose your type of widget ?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a class="btn text-white btn-info btn-block" data-dismiss="modal" id="add-chrono-widget">Chrono</a>
+                <a class="btn text-white btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#meteoModal">Meteo</a>
+                <a class="btn text-white btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#youtubeChannelModal">Youtube Channel</a>
+                <a class="btn text-white btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#steamServiceModal">Steam</a>
+                <a style="display: none;" id="repo-toggle" class="btn text-white btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#repoModal">Repo</a>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid container-spaced">
+    <div class="card-columns" id="widget-zone">
+    </div>
+</div>

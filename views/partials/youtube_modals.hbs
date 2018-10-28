@@ -1,0 +1,28 @@
+<div class="modal fade" id="youtubeChannelModal" tabindex="-1" role="dialog" aria-labelledby="youtubeChannelModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Type the Youtube channel's Name ?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="youtubeChannel-name" class="col-sm-2 col-form-label">Name</label>
+                        <input type="text" class="form-control" id="youtubeChannel-name"  placeholder="Enter youtube channel name">
+                    </div>
+                    <div class="form-group">
+                        <label for="youtubeChannel-timer" class="col-sm-2 col-form-label">Timer</label>
+                        <input type="number" min="1" class="form-control" id="youtubeChannel-timer" placeholder="Enter frequency time (seconds)">
+                    </div>
+                    <button type="submit" class="btn text-white btn-info btn-block" id="add-youtubeChannel-widget">Add</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div id="youtubeChannel-err" class="alert alert-danger mx-auto err-alert" role="alert"></div>
+            </div>
+        </div>
+    </div>
+</div>

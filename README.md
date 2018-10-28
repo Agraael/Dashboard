@@ -9,16 +9,5 @@ voici les service disponibles :
 - steam profile  (affiche les jeu disponible sur un profils steam)
 - github repo ( affiche les stats d'un repo git de l'utilisateur , si il est connecté )
 
-
-## UML diagrams
-
-
-```mermaid
-graph LR
-A[Serveur] -- widget template --> B((client))
-B --> C((web browser))
-C -- user request --> B
-B --> A
-A --> M(module widget)
-M -- response --> A
-```
+use `docker-compose build && docker-compose up`
+to run

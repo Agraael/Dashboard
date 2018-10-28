@@ -1,0 +1,14 @@
+<div class="card shadow rounded" id="widget-{{key}}">
+    <img class="card-img-top" src="{{city_image}}" alt="/images/image-not-found.png">
+    <div class="card-header">
+        <h3>Actual weather in {{city}}</h3>
+    </div>
+    <div class="card-body">
+        <button type="button" class="close widget-close" aria-label="Close" id="widget-close-{{key}}">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <img src="{{weather_image}}" style="height: 70px; width: 70px;" class="rounded-circle" alt="/images/image-not-found.png">
+        <p class="font-weight-bold" style="font-size: 20px">Temperature : {{temp}} ºC today ({{weather}})</p>
+        <p class="font-weight-bold" style="font-size: 20px">Humidity : {{humidity}}, Wind : {{wind}}km/h</p>
+    </div>
+</div>

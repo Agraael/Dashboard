@@ -1,0 +1,16 @@
+<div class="container container-spaced shadow bg-white rounded">
+    <div class="card text-center">
+        <div class="card-body">
+            <h3 class="card-title">Welcome to {{title}}</h3>
+            {{#if user}}
+                <a class="btn btn-success btn-lg btn-block" href="/dashboard">Click here</a>
+            {{else}}
+                    <a class="btn btn-primary btn-block" href="/dashboard">Sign in</a>
+                    <a class="btn btn-primary btn-block" href="/register">Register for free</a>
+                    <a class="btn btn-primary btn-block" href="/reset-password">Forgot your password ?</a>
+            {{/if}}
+        </div>
+        <div class="card-footer text-muted">
+        </div>
+    </div>
+</div>

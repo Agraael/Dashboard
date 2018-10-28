@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <a class="navbar-brand" href="#">
+        <img src="/images/jawa_logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
+    </a>
+    {{#if user}}
+        <a class="navbar-brand" href="/dashboard">MyDashboard</a>
+    {{else}}
+        <a class="navbar-brand" href="/">MyDashboard</a>
+    {{/if}}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            {{#if user}}
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{user.profile.firstName}} {{user.profile.lastName}}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/profile">Profile</a>
+                        <a class="dropdown-item" href="/logout">Sign out</a>
+                    </div>
+                </li>
+            {{/if}}
+        </ul>
+    </div>
+    {{#if dashboard}}
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#widgetModal">Add widget</a>
+        <div id="google-signIn" class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a id="google-signOut" href="#" style="display: none;" class="btn btn-warning" onclick="signOut();">Google Sign out</a>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="{{google_sign}}">
+        <button id="github-login" class="btn btn-info" data-toggle="modal" data-target="#githubLogModal">Github Login</button>
+        <a id="github-logout" href="#" style="display: none;" class="btn btn-warning" >Github Logout</a>
+    {{/if}}
+</nav>
